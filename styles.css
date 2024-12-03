@@ -1,0 +1,85 @@
+@import url(https://fonts.bunny.net/css?family=arvo:400);
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  min-height: 100svh;
+  background-color: black;
+  background-image: radial-gradient(rgb(30, 41, 59),rgb(15, 23, 42));
+  /* color: white; */
+  color: rgb(224, 235, 25);
+line-height: 1.4;
+  font-size: 1rem;
+  font-family: system-ui;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wrapper{
+  width: min(calc(100% - 2rem), 310px);
+  margin-inline: auto;
+}
+
+.wrapper > h1{
+  font-size: 1.3rem; 
+  margin: 1.5rem 0 .7rem;
+  text-transform: capitalize;
+}
+.wrapper > h2{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-block: 0;
+  /* color: rgb(168, 162, 158); */
+  color: rgb(168, 162, 158);
+}
+.poem{
+  position: relative;
+  margin: 0;
+  font-family: 'Arvo', serif;
+  /* outline: 1px dashed red; */
+  background-image: url("https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/ani-man-walking.webp");
+  background-size: cover;
+  background-position: center 1.5rem;
+  background-repeat: no-repeat;
+  -webki-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  mix-blend-mode: luminosity;
+}
+.poem > p {
+  margin: 0 0 1.25rem;
+  padding: 0;
+  font-size: clamp(.8rem, 2.5vw - .05rem, 1rem);
+  line-height: 1.5;
+}
+.poem p:first-child{
+  padding-top: 1.5rem;
+}
+.poem > p::first-letter{
+  font-size: 1.2rem;
+}
+
+/* p {
+  color: khaki;
+} */
+
+a{
+  /* color: rgb(214, 198, 21); */
+  color: rgb(255, 255, 255);
+  /* color: white; */
+  text-decoration: none;
+  font-family: system-ui;
+  font-size: .8rem;
+  margin-top: 1rem;
+  opacity: .75;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  transition: color 300ms ease-in-out;
+}
+a:hover{
+  color: hotpink;
+}
